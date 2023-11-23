@@ -42,9 +42,9 @@ function game(){
     
     console.log(userAmount, computerAmount)
     if (userAmount>computerAmount){
-        console.log("you won the match")
+        alert("you won the match")
     } else{
-        console.log("you lost the match")
+        alert("you lost the match")
     }
 }
 
