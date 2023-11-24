@@ -1,4 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <script src="./rockpapersiccer.js"></script>
+    <head>
+        <script src="./rockpapersiccer.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="scoreContainer">
+                <div class="playerScoreContainer">
+                    <div>
+                        Player
+                    </div>
+                    <div id="playerScore">
+                    </div>
+                </div>
+                <div class="computerScoreContainer">
+                    <div>
+                        Computer
+                    </div>
+                    <div id="computerScore">
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="computerContainer">
+                    <div class="computerDecision" id="compDecision">
+                    </div>
+                </div>
+                <div class="playerContainer">
+                    <div class="rockContainer" id="r">
+                        <img src="./images/rock.png"/>
+                        <h2>Rock</h2>
+                    </div>
+                    <div class="paperContainer" id="p">
+                        <img src="./images/paper.png"/>
+                        <h2>Paper</h2>
+                    </div>
+                    <div class="scissorsContainer" id="s">
+                        <img src="./images/scissors.png"/>
+                        <h2>Scissors</h2>
+                    </div>
+                </div>
+                <button onclick={resetGame()}>play again</button>
+            </div>
+        </div>
+    </body>
 </html>
